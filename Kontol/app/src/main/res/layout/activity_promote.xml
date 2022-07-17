@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.PromoteActivity">
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_above="@+id/btnTambahPromote"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtPromoteOff"
+            android:visibility="gone"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:text="Promote OFF!"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclePromote"
+            android:visibility="gone"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnTambahPromote"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#f4f4f4"
+        android:background="#2ecc71"
+        android:text="Tambah Promote"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:orientation="horizontal"
+    android:id="@+id/wadahItemAplikasi"
+    android:background="#bdc3c7">
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/namaAplikasi"
+            android:ellipsize="marquee"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:text="Nama Aplikasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"
+            android:maxLines="2"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:singleLine="true"
+                android:id="@+id/pakage"
+                android:ellipsize="marquee"
+                android:layout_marginLeft="10dp"
+                android:textSize="12sp"
+                android:text="com.dedi.bismilah"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                />
+
+            <TextView
+                android:textColor="@color/merah"
+                android:id="@+id/adaIklanAktif"
+                android:ellipsize="marquee"
+                android:layout_marginRight="10dp"
+                android:textSize="12sp"
+                android:text="OFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#95a5a6"
+        android:gravity="center"
+        android:layout_width="75dp"
+        android:layout_height="70dp">
+        <TextView
+            android:ellipsize="end"
+            android:id="@+id/jumlahTrafikAplikasi"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="9999999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            />
+    </LinearLayout>
+
+</LinearLayout>

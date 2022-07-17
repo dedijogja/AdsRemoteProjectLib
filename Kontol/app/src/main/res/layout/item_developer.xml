@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="#bdc3c7"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:id="@+id/wadahItemDeveloper">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/namaDeveloper"
+            android:ellipsize="end"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:text="Nama Developer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"
+            android:maxLines="2"/>
+        <TextView
+            android:maxLines="1"
+            android:id="@+id/jumlahApp"
+            android:ellipsize="end"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="12sp"
+            android:text="Total : 100 App"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#95a5a6"
+        android:gravity="center"
+        android:layout_width="75dp"
+        android:layout_height="70dp">
+        <TextView
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:id="@+id/jumlahTrafik"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="9999999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

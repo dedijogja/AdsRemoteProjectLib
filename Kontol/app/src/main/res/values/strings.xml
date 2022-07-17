@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Kontrol App</string>
+
+    <string-array name="opsi_status_app">
+        <item>off</item>
+        <item>ondev</item>
+        <item>onapp</item>
+    </string-array>
+
+    <string-array name="opsi_status_startapp_dev">
+        <item>onoffline</item>
+        <item>ononline</item>
+        <item>off</item>
+    </string-array>
+
+    <string-array name="opsi_status_startapp_app">
+        <item>ondev</item>
+        <item>ononline</item>
+        <item>onoffline</item>
+        <item>off</item>
+    </string-array>
+</resources>

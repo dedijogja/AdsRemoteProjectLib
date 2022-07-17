@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.dekontrol.app">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:usesCleartextTraffic="true"
+        android:name=".AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:targetApi="m">
+        <activity android:name=".activity.TambahPromote"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.DetailPromote"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.PromoteActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ListDeveloper"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ListAplikasi"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DetailAplikasi"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TambahDeveloper"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.EditDeveloper"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

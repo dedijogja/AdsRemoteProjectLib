@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ListAplikasi">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_above="@+id/bawah"
+        android:id="@+id/recycleListAplikasi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <LinearLayout
+        android:id="@+id/bawah"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical">
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:textColor="#f4f4f4"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status Iklan :  "
+                android:layout_marginStart="10dp" />
+            <TextView
+                android:id="@+id/onOffDev"
+                android:textSize="20sp"
+                android:textColor="#e74c3c"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OFF (0/3)"/>
+        </LinearLayout>
+
+        <ImageView
+            android:onClick="setting"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_setting"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="10dp" />
+    </LinearLayout>
+</RelativeLayout>
